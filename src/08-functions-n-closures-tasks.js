@@ -119,7 +119,7 @@ function memoize(func) {
  * retryer() => 2
  */
 function retry(func, attempts) {
-  return function () {
+  return () => {
     for (let i = 0; i <= attempts; i += 1) {
       try {
         return func();
